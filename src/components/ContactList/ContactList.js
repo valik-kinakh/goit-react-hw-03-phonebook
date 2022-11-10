@@ -30,9 +30,9 @@ const ContactList = ({ contacts, searchQuery, deleteContact }) => {
 ContactList.propTypes = {
   contacts: Proptypes.arrayOf(
     Proptypes.shape({
-      id: Proptypes.string,
-      name: Proptypes.string,
-      number: Proptypes.string,
+      id: Proptypes.string.isRequired,
+      name: Proptypes.string.isRequired,
+      number: Proptypes.string.isRequired,
     })
   ).isRequired,
   searchQuery: Proptypes.string.isRequired,
